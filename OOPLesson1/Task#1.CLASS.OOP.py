@@ -1,5 +1,5 @@
 class Rectangle:
-    def __init__(self, length, width):
+    def __init__(self):
         self.width = width
         self.length = length
 
@@ -10,9 +10,9 @@ class Rectangle:
         return 2 * (self.width + self.length)
 
 
-print("show me perimeter and and area of my rectangle:\t")
+print("perimeter and  area of my rectangle:\n")
 length = int(input("Enter a length:\n"))
 width = int(input("Enter a width:\n"))
-Rectangle1 = Rectangle(length, width)
+Rectangle1 = Rectangle()
 print("Area is ", Rectangle1.findarea())
 print("Perimeter is ", Rectangle1.findperimeter())
